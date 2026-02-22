@@ -17,7 +17,7 @@ import { INITIAL_STATS, ZONES, getZoneStatus } from '@/lib/mockData';
 import { useInterval } from '@/lib/hooks';
 
 const SECTION_META = {
-    overview: { title: 'Command Overview', sub: 'Live summary — Aarohan Music Fest 2026 · MMRDA, BKC, Mumbai' },
+    overview: { title: 'Command Overview', sub: 'Live summary — Central System Monitoring' },
     map: { title: 'Live Map', sub: 'Interactive pan-India congestion tracking' },
     zones: { title: 'Zone Monitor', sub: 'Heatmap and zone-level density management' },
     alerts: { title: 'Alert Console', sub: 'Real-time AI-generated incidents and resolution' },
@@ -173,7 +173,7 @@ export default function AdminDashboard() {
 
                     {/* Footer */}
                     <div style={{ paddingTop: 12, borderTop: '1px solid var(--border)', textAlign: 'center' }}>
-                        <p style={{ fontSize: 11, color: 'var(--t3)' }}>CrowdSense AI · YOLOv8 + LSTM · Aarohan Hackathon 1.0 — RAIT, Navi Mumbai</p>
+                        <p style={{ fontSize: 11, color: 'var(--t3)' }}>CrowdSense AI · YOLOv8 + LSTM · System Monitor</p>
                     </div>
                 </main>
             </div>

@@ -212,7 +212,7 @@ export default function SignupPage() {
                 </div>
 
                 <p style={{ textAlign: 'center', fontSize: 11, color: '#9ca3af', marginTop: 20 }}>
-                    CrowdSense AI · Aarohan 1.0 · RAIT Navi Mumbai
+                    CrowdSense AI System
                 </p>
             </div>
             <style>{`

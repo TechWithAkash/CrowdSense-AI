@@ -81,7 +81,7 @@ export default function UserSidebar({ active, onNav, overallStatus }) {
                     <span style={{ width: 8, height: 8, borderRadius: '50%', background: sm.dot, display: 'inline-block', flexShrink: 0 }} />
                     <span style={{ fontSize: 14, fontWeight: 700, color: sm.color }}>{sm.label}</span>
                 </div>
-                <div style={{ fontSize: 10, color: '#64748b', marginTop: 4 }}>Aarohan 1.0 · RAIT, Navi Mumbai</div>
+                <div style={{ fontSize: 10, color: '#64748b', marginTop: 4 }}>System Active · Global Monitoring</div>
             </div>
 
             {/* Profile & Sign Out cursor pointer to make it clickable overall */}

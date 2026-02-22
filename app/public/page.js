@@ -82,9 +82,9 @@ export default function PublicDashboard() {
                             <span style={{ fontSize: 11, fontWeight: 600, color: '#475569', fontVariantNumeric: 'tabular-nums' }}>{time}</span>
                         </div>
 
-                        {/* Aarohan badge */}
+                        {/* System badge */}
                         <div style={{ padding: '5px 11px', borderRadius: 99, background: '#f0f4ff', border: '1px solid #c7d2fe', fontSize: 11, fontWeight: 600, color: '#4338ca' }}>
-                            Aarohan 1.0
+                            System V1
                         </div>
                     </div>
                 </header>
@@ -102,7 +102,7 @@ export default function PublicDashboard() {
 
                 {/* Footer */}
                 <footer style={{ padding: '14px 28px', borderTop: '1px solid #e9ecf0', background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <span style={{ fontSize: 11, color: '#94a3b8' }}>Powered by CrowdSense AI · YOLOv8 + LSTM · RAIT, Navi Mumbai</span>
+                    <span style={{ fontSize: 11, color: '#94a3b8' }}>Powered by CrowdSense AI · YOLOv8 + LSTM</span>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 11, color: '#94a3b8' }}>
                         <RefreshCw size={10} />
                         Data refreshes every 8s

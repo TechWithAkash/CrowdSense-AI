@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
   title: "CrowdSense AI — Intelligent Crowd Management System",
   description:
-    "AI-powered real-time crowd monitoring and management platform — predicting crowd crises before they happen. Built for Aarohan 1.0 Hackathon.",
+    "AI-powered real-time crowd monitoring and management platform — predicting crowd crises before they happen.",
   keywords: ["crowd management", "AI", "smart city", "public safety", "stampede prevention"],
 };
 

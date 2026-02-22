@@ -94,7 +94,7 @@ export default function AdminSidebar({ active, onNav, overallStatus = 'critical'
                     <span style={{ width: 8, height: 8, borderRadius: '50%', background: sm.dot, display: 'inline-block', flexShrink: 0, animation: overallStatus === 'critical' ? 'blink 1.4s ease-in-out infinite' : 'none' }} />
                     <span style={{ fontSize: 14, fontWeight: 700, color: sm.color }}>{sm.label}</span>
                 </div>
-                <div style={{ fontSize: 10, color: 'var(--t3)' }}>Aarohan Music Fest 2026</div>
+                <div style={{ fontSize: 10, color: 'var(--t3)' }}>Global AI Monitoring</div>
             </div>
 
             {/* Sign out */}
