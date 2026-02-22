@@ -1,9 +1,6 @@
 # 🏙️ CrowdSense AI
 ## Intelligent Real-Time Crowd Management System
 
-> **Hackathon:** Aarohan 1.0 | **Theme:** Crowd Management
-> **Organized by:** CSI Mumbai Chapter & TPC, RAIT (D.Y. Patil University, Navi Mumbai)
-
 ---
 
 ## 📌 Table of Contents
