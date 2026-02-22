@@ -8,6 +8,7 @@ import AlertsSection from '@/components/public/AlertsSection';
 import SafetySection from '@/components/public/SafetySection';
 import EmergencySection from '@/components/public/EmergencySection';
 import LargeMapSection from '@/components/public/LargeMapSection';
+import ProfileSection from '@/components/public/ProfileSection';
 import { ZONES, getZoneStatus } from '@/lib/mockData';
 import { useInterval, useClock } from '@/lib/hooks';
 
@@ -18,6 +19,7 @@ const PAGE_TITLES = {
     alerts: { title: 'Safety Alerts', sub: 'AI-generated alerts and notices for attendees' },
     safety: { title: 'Safety Guide', sub: 'Essential safety tips and crowd behaviour' },
     emergency: { title: 'Emergency', sub: 'Contacts and emergency procedures' },
+    profile: { title: 'My Profile', sub: 'Manage your settings and preferences' },
 };
 
 export default function PublicDashboard() {
@@ -95,6 +97,7 @@ export default function PublicDashboard() {
                     {activeSection === 'alerts' && <AlertsSection />}
                     {activeSection === 'safety' && <SafetySection />}
                     {activeSection === 'emergency' && <EmergencySection />}
+                    {activeSection === 'profile' && <ProfileSection />}
                 </main>
 
                 {/* Footer */}

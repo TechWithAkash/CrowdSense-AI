@@ -1,5 +1,6 @@
 'use client';
-import { Shield, LayoutDashboard, Map, MapPin, Bell, BookOpen, Phone, ChevronRight, AlertTriangle, ShieldAlert, Globe } from 'lucide-react';
+import { Shield, LayoutDashboard, Map, MapPin, Bell, BookOpen, Phone, ChevronRight, AlertTriangle, ShieldAlert, Globe, LogOut } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 const NAV = [
     { id: 'overview', label: 'Overview', icon: LayoutDashboard, desc: 'Event at a glance' },
@@ -19,6 +20,7 @@ const STATUS_META = {
 
 export default function UserSidebar({ active, onNav, overallStatus }) {
     const sm = STATUS_META[overallStatus] || STATUS_META.safe;
+    const router = useRouter();
 
     return (
         <aside style={{
@@ -80,6 +82,33 @@ export default function UserSidebar({ active, onNav, overallStatus }) {
                     <span style={{ fontSize: 14, fontWeight: 700, color: sm.color }}>{sm.label}</span>
                 </div>
                 <div style={{ fontSize: 10, color: '#64748b', marginTop: 4 }}>Aarohan 1.0 · RAIT, Navi Mumbai</div>
+            </div>
+
+            {/* Profile & Sign Out cursor pointer to make it clickable overall */}
+            <div style={{ padding: '16px 18px', borderTop: '1px solid #f1f5f9', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: '#f8fafc' }}>
+                <div
+                    onClick={() => onNav('profile')}
+                    style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer', transition: 'opacity 0.2s' }}
+                    onMouseEnter={e => e.currentTarget.style.opacity = '0.8'}
+                    onMouseLeave={e => e.currentTarget.style.opacity = '1'}
+                >
+                    <div style={{ width: 36, height: 36, borderRadius: '50%', background: 'linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#1d4ed8', fontWeight: 700, fontSize: 14, border: '1.5px solid #93c5fd', boxShadow: '0 2px 8px rgba(59,130,246,0.15)' }}>
+                        <span style={{ letterSpacing: '0.05em' }}>AK</span>
+                    </div>
+                    <div>
+                        <div style={{ fontSize: 13, fontWeight: 700, color: '#0f172a' }}>Akash</div>
+                        <div style={{ fontSize: 11, color: '#64748b' }}>Public User</div>
+                    </div>
+                </div>
+                <button
+                    onClick={() => router.push('/login')}
+                    style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 8, borderRadius: 8, color: '#94a3b8', transition: 'all 0.2s', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                    onMouseEnter={e => { e.currentTarget.style.color = '#ef4444'; e.currentTarget.style.background = '#fef2f2'; }}
+                    onMouseLeave={e => { e.currentTarget.style.color = '#94a3b8'; e.currentTarget.style.background = 'transparent'; }}
+                    title="Sign Out"
+                >
+                    <LogOut size={18} />
+                </button>
             </div>
         </aside>
     );
